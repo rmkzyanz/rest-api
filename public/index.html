@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>RMKZ YANZ</title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+        }
+        h2{
+            display: flex;
+            color: transparent;
+            font-size: 8vw;
+            font-family: 'Bad Script', cursive;
+        }
+        h2 span{
+            animation: animate 3s linear infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+        @keyframes animate{
+            0%
+            {
+                color: #fff;
+                filter: blur(1px) hue-rotate(0deg);
+                text-shadow: 
+                0 0 5px #00b3ff,
+                0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 30px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 50px #00b3ff,
+                0 0 60px #00b3ff,
+                0 0 70px #00b3ff;
+            }
+            30%,70%
+            {
+                color: #fff;
+                filter: blur(1px) hue-rotate(360deg);
+                text-shadow: 
+                0 0 5px #00b3ff,
+                0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 30px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 50px #00b3ff,
+                0 0 60px #00b3ff,
+                0 0 70px #00b3ff;
+            }
+            100%{
+                color: transparent;
+                box-shadow: none;
+                filter: blur(1px) hue-rotate(0deg);
+            }
+        }
+        .readdocs{
+            position: relative;
+            animation: animebot .8s;
+            text-align: center
+        }
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, .5)
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1)
+            }
+        p{
+            font-size: 2vw;
+            color: rgb(255, 0, 0);
+        }
+    </style>
+    <body>
+        <div>
+            <div>
+            <h2>
+                <span style="--i:1">Y</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">n</span>
+                <span style="--i:4">z</span>
+                <span style="--i:5;margin-left: 5vw";>B</span>
+                <span style="--i:6">o</span>
+                <span style="--i:7">t</span>
+            </h2>
+        </div>
+    <div class="readdocs">
+            <p>Read <a href="https://yanz-api.herokuapp.com/docs.html" class="docs">Docs.</a></p>
+        </div>
+    </div>
+        
+        <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+    </body>
+</html>
